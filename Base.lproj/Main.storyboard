@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DX2-Cs-ZU4">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bar Code Scanner View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="BarCodeScannerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="BarCodeScannerViewController" customModule="BarCodeScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Scanned Text :" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQo-YG-4rS">
+                                <rect key="frame" x="19.999999999999993" y="345" width="127.33333333333331" height="23"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr1-C7-zvK">
+                                <rect key="frame" x="150" y="447.33333333333331" width="93" height="46.333333333333314"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Scan">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nav2Scanner:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qno-02-J5Y"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BARCODE SCANNER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6oJ-Jb-r9u">
+                                <rect key="frame" x="20" y="155" width="353" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7zI-8b-6Vf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="21"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knl-NJ-bdS">
+                                <rect key="frame" x="167.33333333333337" y="356.66666666666669" width="205.66666666666663" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lr1-C7-zvK" secondAttribute="trailing" constant="150" id="45m-b3-U5m"/>
+                            <constraint firstItem="KQo-YG-4rS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="BMJ-gv-uYQ"/>
+                            <constraint firstItem="knl-NJ-bdS" firstAttribute="leading" secondItem="KQo-YG-4rS" secondAttribute="trailing" constant="20" id="SGQ-dV-zbW"/>
+                            <constraint firstItem="6oJ-Jb-r9u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="SgU-6m-A4C"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="knl-NJ-bdS" secondAttribute="trailing" constant="20" id="b68-Qf-cIv"/>
+                            <constraint firstItem="6oJ-Jb-r9u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="bIL-vc-9GZ"/>
+                            <constraint firstItem="Lr1-C7-zvK" firstAttribute="top" secondItem="knl-NJ-bdS" secondAttribute="bottom" constant="90.670000000000002" id="ifQ-6K-KZo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6oJ-Jb-r9u" secondAttribute="trailing" constant="20" id="p4u-i9-QwA"/>
+                            <constraint firstItem="Lr1-C7-zvK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="vqS-Nq-bJh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Lr1-C7-zvK" secondAttribute="bottom" constant="324.32999999999998" id="w5A-nX-kZD"/>
+                            <constraint firstItem="KQo-YG-4rS" firstAttribute="top" secondItem="6oJ-Jb-r9u" secondAttribute="bottom" constant="160" id="xJV-hF-LTW"/>
+                            <constraint firstItem="knl-NJ-bdS" firstAttribute="centerY" secondItem="KQo-YG-4rS" secondAttribute="centerY" id="ypy-aA-5f9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i1t-Sd-5aV"/>
+                    <connections>
+                        <outlet property="barcodeHeader" destination="6oJ-Jb-r9u" id="wgn-7o-WTL"/>
+                        <outlet property="scanButton" destination="Lr1-C7-zvK" id="ZBp-ha-533"/>
+                        <outlet property="scannedSubTitle" destination="KQo-YG-4rS" id="mvq-Yh-Zsx"/>
+                        <outlet property="scannedText" destination="knl-NJ-bdS" id="cYa-EE-ODg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023.6641221374045" y="-2.1126760563380285"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Q0-LN-mXg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="DX2-Cs-ZU4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gIo-iZ-EKh">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ecc-9g-TFw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEm-AK-CoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
